@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Para Casa | 9 FL</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=300,400,600,900')
+
+font-family: 'Montserrat', sans-serif;
+
+body{
+
+    background-color: #333;
+}
+
+
+.menu{
+    width: 100%;
+    height:50px;
+    background-color: #222; 
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    background-color: #222;
+    color: #FFF
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #FFF;
+    color:#555;
+}
+
+.menu ul ul li{
+    float:none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+    background-color: #222;
+}
+
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #222;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    }
+    #bt_menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: none;
+    }   
+@media(max-width: 800px){
+
+    label[for="bt_menu"]{
+        display: block;
+    }
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .3s;
+    }
+
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+
+    }
+
+}
+ .homework {
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        margin: 10px 10px;
+    }
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: #333;
+    color:#8c8c8c;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+table{
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    padding: 10px;
+}
+
+table thead .tableContent{
+    padding: 7px;
+}
+
+table tr td{
+    border:1px solid black;
+    background-color: #222;
+    padding-right: 10px;
+    padding-bottom: 15px; 
+    table-layout: auto;
+  
+}
+.tableContent{
+    background-color: black;
+    padding-right: 10px;
+    padding-bottom: 15px; 
+    table-layout: auto;
+  
+}
+
+table tbody a{
+    text-decoration: none;
+    color: white;
+}
+
+table tbody tr td:hover a{
+    background-color: white;
+    color: #222;
+}
+
+
+table tr td:hover{
+    background-color: white;
+    color: #222;
+}
+#titleBody {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paracasa.html">Para Casa</a></li>
+            <li><a href="#">Calendários</a>
+                <ul>
+                    <li><a href="horarioaula.html">Horário de aulas</a></li>
+                    <li><a href="horarioprova.html">Horário de provas</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </nav>
+    <h1 id="titleBody">Clique no dia para saber as Atividades e o Para Casa dados em sala de aula</h1>
+
+   <table>
+       <thead>
+        <tr>
+            <th  colspan="7" class="tableContent"><h2>Junho</h2></th>
+        </tr>
+           <tr>
+            <th class="tableContent">Dom</th>
+            <th class="tableContent">Seg</th>
+            <th class="tableContent">Ter</th>
+            <th class="tableContent">Qua</th>
+            <th class="tableContent">Qui</th>
+            <th class="tableContent">Sex</th>
+            <th class="tableContent">Sab</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>01</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>03</td>
+                <td><a href="pc4j.html">04</a></td>
+                <td>05</td>
+                <td>06</td>
+                <td>07</td>
+                <td>08</td>
+             </tr>
+             <tr>
+                 <td>09</td>
+                 <td>10</td>
+                 <td>11</td>
+                 <td>12</td>
+                 <td>13</td>
+                 <td>14</td>
+                 <td>15</td>
+             </tr>
+             <tr>
+                 <td>16</td>
+                 <td>17</td>
+                 <td>18</td>
+                 <td>19</td>
+                 <td>20</td>
+                 <td>21</td>
+                 <td>22</td>
+             </tr>
+             <tr>
+                 <td>23</td>
+                 <td>24</td>
+                 <td>25</td>
+                 <td>26</td>
+                 <td>27</td>
+                 <td>28</td>
+                 <td>29</td>
+             </tr>  
+             <tr>
+                 <td>30</td>
+             </tr>
+        </tbody>
+   </table>
+    
+
+    <footer>
+        <li><strong>Criado e Mantido por:</strong></li>
+        <li>Bernardo Dittz | 9 FL 2019</li>
+    </footer>
+
+
+
+</body>
+</html>

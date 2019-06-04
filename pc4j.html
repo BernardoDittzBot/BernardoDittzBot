@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pc4j | 9FL</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=300,400,600,900')
+
+font-family: 'Montserrat', sans-serif;
+
+body{
+
+	background-color: #333;
+}
+
+
+.menu{
+	width: 100%;
+	height:50px;
+	background-color: #222;	
+}
+
+.menu ul {
+	list-style: none;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align:center;
+	background-color: #222;
+	color: #FFF
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+.menu a:hover {
+	background-color: #FFF;
+	color:#555;
+}
+
+.menu ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+	background-color: #222;
+}
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #222;
+	color:white;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	}
+	#bt_menu{
+		display: none;
+	}
+	label[for="bt_menu"]{
+		display: none;
+	}	
+@media(max-width: 800px){
+
+	label[for="bt_menu"]{
+		display: block;
+	}
+	.menu{
+		margin-top: 5px;
+		margin-left: -100%;
+		transition: all .4s;
+	}
+
+	#bt_menu:checked ~ .menu{
+		margin-left: 0;
+	}
+
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .3s;
+	}
+
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 200px;
+
+	}
+}
+
+body {
+
+	background-color: #333;
+}
+.hed{
+
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding: 20px 20px;
+}
+
+footer {
+	padding: 5px;
+	text-align: center;
+	color:#8c8c8c;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+</style>
+</head>
+<body>
+	<input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9776;</label>
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="paracasa.html">Para Casa</a></li>
+			<li><a href="atividades.html">Atividades</a></li>
+			<li><a href="#">Calendários</a>
+				<ul>
+					<li><a href="horarioaula.html">Horário de aulas</a></li>
+					<li><a href="horarioprova.html">Horário de provas</a></li>
+				</ul>
+
+			</li>
+		</ul>
+	</nav>
+
+<h1 class="hed"><br>Ter, 4 de Junho de 2019</h1>
+<h2 class="hed">Atividades</h2>
+<h3 class="hed">Hi: Caracteristicas do Nazismo/Facismo<br>EP: Slides modo imperativo e subjuntivo <br>EF: Atividade avaliada (criação de um jogo inclusivo) <br>RE: Atividade avaliada <br>IN: Correção de Para Casa e introdução a Question Tags<br></h3>
+<h2 class="hed">Para Casa</h2>
+<h3 class="hed">Hi:-<br>EP:-<br>EF:-<br>RE:-<br>IN:pp.34 e 35<br></h3>
+
+
+
+<footer>
+		<li><strong>Criado e Mantido por:</strong></li>
+		<li>Bernardo Dittz | 9 FL 2019</li>
+</footer>
+</body>
+</html>
